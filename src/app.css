@@ -1,0 +1,24 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+	font-family: 'AncientModernTales';
+	src: url('/AncientModernTales.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Rudiment';
+	src: url('/Rudiment.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Handlee';
+	src: url('/Handlee-Regular.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
