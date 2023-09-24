@@ -4,7 +4,7 @@
 
 <div>
 	<div class="bg-white border-t-2 border-black p-2">
-		<MarqueeTextWidget repeat={10} duration={2}>
+		<MarqueeTextWidget repeat={50} duration={2}>
 			<p class="px-4 text-4xl font-mono font-bold text-black">SKILLS</p>
 		</MarqueeTextWidget>
 	</div>

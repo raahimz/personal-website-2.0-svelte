@@ -23,6 +23,7 @@
 		// Create a camera
 		camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
 		camera.position.z = 5;
+		camera.position.y = 0.5; // Lower the camera's y-position
 
 		// Create a renderer
 		renderer = new THREE.WebGLRenderer({ alpha: true });
@@ -47,7 +48,7 @@
 					const distanceFromCenter = Math.sqrt(x * x + y * y + z * z);
 
 					if (Math.abs(distanceFromCenter - radius) <= threshold) {
-						const geometry = new THREE.SphereGeometry(0.05, 16, 16); // Changed to SphereGeometry
+						const geometry = new THREE.SphereGeometry(0.05, 16, 16);
 						const smallSphere = new THREE.Mesh(geometry, basicMaterial);
 						smallSphere.position.set(x, y, z);
 						smallSphere.userData.phase = Math.random() * Math.PI * 2;
@@ -66,8 +67,13 @@
 		function animate() {
 			requestAnimationFrame(animate);
 
-			sphereGroup.rotation.x += 0.0005 + mouseY * 0.01;
-			sphereGroup.rotation.y += 0.0005 + mouseX * 0.01;
+			// Increase ambient rotation
+			sphereGroup.rotation.x += 0.0015;
+			sphereGroup.rotation.y += 0.0015;
+
+			// Add mouse-induced rotation
+			sphereGroup.rotation.x += mouseY * 0.01;
+			sphereGroup.rotation.y += mouseX * 0.01;
 
 			smallSpheres.forEach((sphere) => {
 				sphere.position.x += 0.001 * Math.sin(time + sphere.userData.phase);
