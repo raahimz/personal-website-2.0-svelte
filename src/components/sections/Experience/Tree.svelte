@@ -3,11 +3,22 @@
 		{
 			title: 'Internship @ Barbarians LLC',
 			roles: [
-				'Write automated tests for web applications',
-				'Debug web applications',
-				'Assist in developing new features for web applications'
+				'Coding unit tests (Rust/Typescript)',
+				'Developing mobile applications with Flutter',
+				'Developing features for web applications (React/Next)',
+				'Implemented image segmentation with Mediapipe for Google Meet-like web-cam filters'
 			],
-			skills: ['React JS', 'Webdriver IO', 'Pactum JS', 'Rest API', 'Express JS'],
+			skills: [
+				'React JS',
+				'Flutter',
+				'Svelte',
+				'Jest',
+				'Typescript',
+				'Pactum JS',
+				'Rest API',
+				'Express JS',
+				'Rust'
+			],
 			date: 'July 2022 - Now',
 			current: true
 		},
