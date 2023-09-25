@@ -2,39 +2,17 @@
 	import Tree from './Tree.svelte';
 	import { fade, slide } from 'svelte/transition';
 	import { inview } from 'svelte-inview';
-
-	let tree;
-	let title;
 </script>
 
 <section class="p-4 bg">
-	<div
-		use:inview={{ unobserveOnEnter: true, rootMargin: '-6%' }}
-		on:change={({ detail }) => {
-			title = detail.inView;
-		}}
+	<h1
+		in:fade
+		class="text-5xl text-center font-bold text-blacks font-handlee bg-purple-300 bg-opacity-70 w-fit ml-auto mr-auto px-2"
 	>
-		{#if title}
-			<h1
-				in:fade
-				class="text-5xl text-center font-bold text-blacks font-handlee bg-purple-300 bg-opacity-70 w-fit ml-auto mr-auto px-2"
-			>
-				Experiences
-			</h1>
-		{/if}
-	</div>
-
-	<div
-		use:inview={{ unobserveOnEnter: true, rootMargin: '-6%' }}
-		on:change={({ detail }) => {
-			tree = detail.inView;
-		}}
-	>
-		{#if tree}
-			<div in:fade class=" p-4 flex flex-col gap-2">
-				<Tree />
-			</div>
-		{/if}
+		Experiences
+	</h1>
+	<div in:fade class=" p-4 flex flex-col gap-2">
+		<Tree />
 	</div>
 </section>
 
