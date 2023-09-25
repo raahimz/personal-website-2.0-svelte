@@ -52,6 +52,8 @@
 		"@rodneylab/svelte-social-icons": "^0.0.28",
 		"svelte-inview": "^4.0.1",
 		"svelte-marquee-text-widget": "^1.1.0",
-		"three": "^0.156.1"
+		"svelte-particles": "^2.12.0",
+		"three": "^0.156.1",
+		"tsparticles-slim": "^2.12.0"
 	}
 }

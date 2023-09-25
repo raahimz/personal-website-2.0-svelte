@@ -9,7 +9,7 @@
 		</MarqueeTextWidget>
 	</div>
 	<div class="bg-black border-b-2 border-white p-2">
-		<MarqueeTextWidget repeat={10} duration={2}>
+		<MarqueeTextWidget repeat={10} duration={3}>
 			<p class="px-4 text-4xl font-mono font-bold text-white">WHAT HAVE I DONE BEFORE?</p>
 		</MarqueeTextWidget>
 	</div>

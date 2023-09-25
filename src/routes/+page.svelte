@@ -7,6 +7,7 @@
 	import Skills from '../components/sections/Skills/Skills.svelte';
 	import Experience from '../components/sections/Experience/Experience.svelte';
 	import Credits from '../components/Credits.svelte';
+	// import BgParticles from '../components/sections/Skills/BgParticles.svelte';
 
 	// SECTIONS
 	// name | DONE
@@ -31,6 +32,6 @@
 	</div>
 	<Skills />
 	<Experience />
+	<Education />
 	<Credits />
-	<!-- <Education /> -->
 </main>

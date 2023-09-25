@@ -77,5 +77,7 @@
 	.lens {
 		-webkit-backdrop-filter: invert(100%);
 		backdrop-filter: invert(100%);
+		/* backdrop-filter: blur(5px); */
+		/* backdrop-filter: hue-rotate(90deg); */
 	}
 </style>

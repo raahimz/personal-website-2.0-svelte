@@ -7,6 +7,10 @@ export default {
 				ancientModernTales: ['AncientModernTales', 'serif'],
 				markerFont: ['Rudiment', 'serif'],
 				handlee: ['Handlee', 'serif']
+			},
+			colors: {
+				'soft-white': '#FAF3E0',
+				'soft-black': '#333333'
 			}
 		}
 	},
