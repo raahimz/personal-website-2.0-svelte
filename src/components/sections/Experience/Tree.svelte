@@ -73,7 +73,7 @@
 					{/if}
 				</h3>
 				<time class="block mb-2 text-sm font-semibold leading-none text-gray-700">{exp.date}</time>
-				<div class="mb-4 text-2xl text-black max-w-md">
+				<div class="mb-4 text-xl text-black max-w-md">
 					{#each exp.roles as role, index}
 						<p>• {role}</p>
 					{/each}
